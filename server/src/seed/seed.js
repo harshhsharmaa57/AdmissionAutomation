@@ -160,7 +160,7 @@ const notices = [
 
 const demoApplicants = [
   {
-    name: 'Riya Sharma',
+    name: 'Harsh Sharma',
     email: 'student@example.com',
     phone: '9876543210',
     courseCode: 'CSE',

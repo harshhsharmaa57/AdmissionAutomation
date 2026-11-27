@@ -51,7 +51,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Admissions 2026–27</p>
-            <h1>Admissions are open for the new academic session</h1>
+            <h1>Applications are open for the 2026–27 session</h1>
             <p>
               ABES Engineering College invites applications for its B.Tech, MBA and MCA
               programmes. Fill the admission form online, upload your documents, and follow the
@@ -107,6 +107,27 @@ export default function Home() {
               For document verification, visit the admission office with the original
               certificates.
             </p>
+            <div className="rail-card rail-card-brand">
+              <h3>At a glance</h3>
+              <dl className="rail-list">
+                <div>
+                  <dt>Session</dt>
+                  <dd>2026–27</dd>
+                </div>
+                <div>
+                  <dt>Last date to apply</dt>
+                  <dd>30 June 2026</dd>
+                </div>
+                <div>
+                  <dt>Review time</dt>
+                  <dd>3–5 working days</dd>
+                </div>
+                <div>
+                  <dt>Applications</dt>
+                  <dd>Online only</dd>
+                </div>
+              </dl>
+            </div>
           </aside>
         </div>
       </section>
@@ -122,7 +143,7 @@ export default function Home() {
             <span>B.Tech branches</span>
           </div>
           <div>
-            <strong>1,080</strong>
+            <strong>4000</strong>
             <span>sanctioned seats</span>
           </div>
           <div>
@@ -133,7 +154,7 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <div className="container section-grid">
+        <div className="container home-board">
           <div>
             <div className="section-heading">
               <h2>Admission notices</h2>
@@ -175,19 +196,21 @@ export default function Home() {
             </ul>
           </div>
 
-          <aside className="panel small-panel">
-            <h3>Before you apply</h3>
-            <p>Keep the following documents ready:</p>
-            <ul className="ticks">
-              <li>Passport size photograph</li>
-              <li>Class 10 and Class 12 marksheets</li>
-              <li>Photo ID proof (Aadhaar, PAN or passport)</li>
-              <li>JEE Main or CUET scorecard, if available</li>
-            </ul>
-            <p className="muted small">
-              Files should be JPG, PNG or PDF and no larger than 5 MB each. Scanned copies must be
-              readable.
-            </p>
+          <aside className="home-rail">
+            
+
+            <div className="rail-card">
+              <h3>Documents to keep ready</h3>
+              <ul className="ticks">
+                <li>Passport size photograph</li>
+                <li>Class 10 and Class 12 marksheets</li>
+                <li>Photo ID proof (Aadhaar, PAN or passport)</li>
+                <li>JEE Main or CUET scorecard, if available</li>
+              </ul>
+              <p className="small muted">
+                Files should be JPG, PNG or PDF and no larger than 5 MB each.
+              </p>
+            </div>
           </aside>
         </div>
       </section>
@@ -219,46 +242,63 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <div className="container">
-          <h2>How to apply</h2>
-          <ol className="steps">
-            <li>
-              <span>1</span>
-              <div>
-                <h3>Create an account</h3>
-                <p>Register with your name, email address and mobile number.</p>
-              </div>
-            </li>
-            <li>
-              <span>2</span>
-              <div>
-                <h3>Fill the admission form</h3>
-                <p>Enter your personal and academic details carefully.</p>
-              </div>
-            </li>
-            <li>
-              <span>3</span>
-              <div>
-                <h3>Upload documents</h3>
-                <p>Attach your photograph, marksheets and photo ID proof.</p>
-              </div>
-            </li>
-            <li>
-              <span>4</span>
-              <div>
-                <h3>Track your application</h3>
-                <p>The admission cell will review your form and update the status.</p>
-              </div>
-            </li>
-          </ol>
-
-          <div className="apply-note">
-            <p>
-              <strong>Need help?</strong> Call the admission cell on +91 120 713 5111 between 9:00
-              am and 5:00 pm, or write to admissions@abes.ac.in. Please do not share your login
-              password with anyone.
-            </p>
+        <div className="container apply-layout">
+          <div>
+            <div className="section-heading">
+              <h2>How to apply</h2>
+            </div>
+            <ol className="steps">
+              <li>
+                <span>1</span>
+                <div>
+                  <h3>Create an account</h3>
+                  <p>Register with your name, email address and mobile number.</p>
+                </div>
+              </li>
+              <li>
+                <span>2</span>
+                <div>
+                  <h3>Fill the admission form</h3>
+                  <p>Enter your personal and academic details carefully.</p>
+                </div>
+              </li>
+              <li>
+                <span>3</span>
+                <div>
+                  <h3>Upload documents</h3>
+                  <p>Attach your photograph, marksheets and photo ID proof.</p>
+                </div>
+              </li>
+              <li>
+                <span>4</span>
+                <div>
+                  <h3>Track your application</h3>
+                  <p>The admission cell will review your form and update the status.</p>
+                </div>
+              </li>
+            </ol>
           </div>
+
+          <aside className="apply-help">
+            <h3>Need help with the form?</h3>
+            <p>
+              Call or write to the admission cell. Keep your application number ready when you
+              contact us.
+            </p>
+
+            <p className="help-label">Helpline</p>
+            <p className="help-line">
+              <a href="tel:+911207135111">+91 120 713 5111</a>
+            </p>
+
+            <p className="help-label">Email</p>
+            <p className="help-line">
+              <a href="mailto:admissions@abes.ac.in">admissions@abes.ac.in</a>
+            </p>
+
+            <p className="help-label">Office hours</p>
+            <p className="help-line">Monday to Saturday, 9:00 am – 5:00 pm</p>
+          </aside>
         </div>
       </section>
     </div>
